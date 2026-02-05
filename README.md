@@ -1,2 +1,28 @@
-MNIST Digit Classification using TensorFlow/KerasThis repository contains a Jupyter Notebook implementing a Deep Learning model to recognize handwritten digits from the classic MNIST dataset. The model is built using TensorFlow and Keras, achieving high accuracy through a simple yet effective feed-forward neural network.🚀 Project OverviewThe goal of this project is to classify $28 \times 28$ grayscale images of handwritten digits (0-9). The workflow includes:Data Preprocessing: Normalizing pixel values to a range of $[0, 1]$.Model Architecture: A Sequential API model featuring a Flatten layer, a Dense hidden layer with ReLU activation, and a Softmax output layer.Training: Optimized using the Adam optimizer and Sparse Categorical Crossentropy loss.Evaluation: Testing the model performance on unseen data.Visualization: Plotting predictions and probability distributions for individual samples.📊 Model PerformanceAfter training for 5 epochs, the model achieves:Training Accuracy: ~98.6%Test Accuracy: ~97.7%🛠️ RequirementsTo run this notebook, you will need the following Python libraries:tensorflownumpymatplotlibYou can install them via pip:Bashpip install tensorflow numpy matplotlib
-📂 File StructureDL_Achin_Sahu_011.ipynb: The main notebook containing the code, training logs, and visualization functions.Data: The MNIST dataset is automatically downloaded via tf.keras.datasets.🖥️ How to UseOpen the .ipynb file in Google Colab or Jupyter Lab.Run the cells sequentially to load the data and train the model.Use the show_sample_predictions() function to see a batch of results.Use predict_digit(index) to inspect a specific test image and see the model's confidence scores for each digit.📈 Example ResultsThe notebook includes utility functions to visualize how the model "sees" the digits:Green Labels: Correct predictions.Red Labels: Incorrect predictions.Probability Breakdown: A detailed look at the Softmax output for specific images.Developed by Achin Sahu.
+MNIST Digit Classification using TensorFlow/KerasThis repository contains a Jupyter Notebook implementing a Deep Learning model to recognize handwritten digits from the classic MNIST dataset. The model is built using TensorFlow and Keras, achieving high accuracy through a simple yet effective feed-forward neural network.
+
+🚀 Project Overview
+The goal of this project is to classify $28 \times 28$ grayscale images of handwritten digits (0-9). The workflow includes:
+Data Preprocessing: Normalizing pixel values to a range of $[0, 1]$.
+Model Architecture: A Sequential API model featuring a Flatten layer, a Dense hidden layer with ReLU activation, and a Softmax output layer.
+Training: Optimized using the Adam optimizer and Sparse Categorical Crossentropy loss.
+Evaluation: Testing the model performance on unseen data.
+Visualization: Plotting predictions and probability distributions for individual samples.
+
+📊 Model Performance
+After training for 5 epochs,
+the model achieves:
+Training Accuracy: ~98.6%
+Test Accuracy: ~97.7%
+🛠️ Requirements
+To run this notebook, you will need the following Python libraries:
+tensorflow
+numpy
+matplotlib
+You can install them via pip:
+Bashpip install tensorflow numpy matplotlib
+📂 File Structure DL_Achin_Sahu_011.ipynb: 
+The main notebook containing the code, training logs, and visualization functions.Data: The MNIST dataset is automatically downloaded via tf.keras.datasets.
+🖥️ How to UseOpen the .ipynb file in Google Colab or Jupyter Lab.Run the cells sequentially to load the data and train the model.Use the show_sample_predictions() function to see a batch of results.Use predict_digit(index) to inspect a specific test image and see the model's confidence scores for each digit.
+📈 Example ResultsThe notebook includes utility functions to visualize how the model "sees" the digits:Green Labels: Correct predictions.Red Labels: Incorrect predictions.Probability Breakdown: A detailed look at the Softmax output for specific images.
+
+Developed by Achin Sahu.
